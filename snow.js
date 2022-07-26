@@ -1,3 +1,4 @@
+//рабочий канвас.
 function init() { //переменные, инициализация
     canvas = document.getElementById("ice"); //соединение с html
     canvas.width = 480; // задаём ширину холста
