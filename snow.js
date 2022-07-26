@@ -6,9 +6,8 @@ function init() { //переменные, инициализация
     draw();
 }
 // Отрисовка игры
-function draw() {
-    gradient.addColorStop(0.5, 'blue', 0.5, white) //градиент
-    context.fillStyle = gradient; //это цвет прямоугольника 
-    context.fillRect(0, 0, 480, 320); //это типа рисует прямоугольник какой-то
+function draw() { 
+    context.fillRect(1, 1, 480, 320); //это типа рисует прямоугольник какой-то
+    context.fillStyle = #a3d0c2; //это цвет прямоугольника 
 }
 init();
