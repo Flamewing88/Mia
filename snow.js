@@ -8,7 +8,7 @@ function init() {
 }
 // Отрисовка игры
 function draw() {
-    context.fillStyle = "#a3d0c2";
-    context.fillRect(0, 0, 480, 320);
+    context.fillStyle = '#a3d0c2';
+    context.fillRect(1, 1, 480, 320);
 }
 init();
