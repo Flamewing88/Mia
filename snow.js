@@ -7,7 +7,7 @@ function init() { //переменные, инициализация
 }
 // Отрисовка игры
 function draw() { 
-    context.fillStyle = '#a3d0c2'; //это цвет прямоугольника 
+    context.fillStyle = #a3d0c2; //это цвет прямоугольника 
     context.fillRect(1, 1, 480, 320); //это типа рисует прямоугольник какой-то
 }
 init();
