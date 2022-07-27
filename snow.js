@@ -1,11 +1,4 @@
 // Инициализация переменных
-function init() {
-    canvas = document.getElementById("ice");
-    canvas.width = 480; // задаём ширину холста
-    canvas.height = 320; // задаём высоту холста
-    context = canvas.getContext('2d');
-    draw();
-}
 // Отрисовка игры
 function draw() {
     context.fillStyle = "#000";
@@ -27,6 +20,10 @@ function rect(color, x, y, width, height) {
 }
 // Инициализация переменных
 function init() {
+    canvas = document.getElementById("ice");
+    canvas.width = 480; // задаём ширину холста
+    canvas.height = 320; // задаём высоту холста
+    context = canvas.getContext('2d');
     // объект который задаёт игровое поле
     game = new rect("#000", 0, 0, 480, 320);
     // Ракетки-игроки
