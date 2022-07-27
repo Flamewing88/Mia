@@ -1,3 +1,15 @@
+function rect(color, x, y, width, height) {
+    this.color = color; // цвет прямоугольника
+    this.x = x; // координата х
+    this.y = y; // координата у
+    this.width = width; // ширина
+    this.height = height; // высота
+    this.draw = function() // Метод рисующий прямоугольник
+    {
+        context.fillStyle = this.color;
+        context.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
 // Инициализация переменных
 function init() {
     game = new rect("#000", 0, 0, 480, 320);
@@ -21,16 +33,3 @@ function draw() {
     context.fillRect(1, 1, 480, 320);
 }
 init();
-
-function rect(color, x, y, width, height) {
-    this.color = color; // цвет прямоугольника
-    this.x = x; // координата х
-    this.y = y; // координата у
-    this.width = width; // ширина
-    this.height = height; // высота
-    this.draw = function() // Метод рисующий прямоугольник
-    {
-        context.fillStyle = this.color;
-        context.fillRect(this.x, this.y, this.width, this.height);
-    }
-}
